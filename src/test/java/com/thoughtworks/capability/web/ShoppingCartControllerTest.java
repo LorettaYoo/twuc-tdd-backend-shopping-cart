@@ -35,4 +35,6 @@ public class ShoppingCartControllerTest extends WebApplicationTest {
                 .andExpect(jsonPath("$.products").isArray())
                 .andExpect(jsonPath("$.totalPrice").value(BigDecimal.ZERO));
     }
+
+
 }
